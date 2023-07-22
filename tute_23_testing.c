@@ -1,0 +1,1 @@
+int externTute23 = 34; 
