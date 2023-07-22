@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="name" style="color: red;">ramkrushn</h1>
+    <h2 class="name" style="color: black;">ramkrushn</h2>
+    <h3 class="name" style="color: blue;">ramkrushn</h3>
+    <h4 class="name" style="color: brown;">ramkrushn</h4>
+    <h6 class="name" style="color: orange;">ramkrushn</h6>
+
+    <div id="colorName">
+        <h3 class="colorName" style="border: 3px solid "></h3>
+        <h3 class="colorName" style="border: 3px solid " ></h3>
+        <h3 class="colorName" style="border: 3px solid " ></h3>
+        <h3 class="colorName" style="border: 3px solid " ></h3>
+        <h3 class="colorName" style="border: 3px solid " ></h3>
+        <h3 class="colorName" style="border: 3px solid " ></h3>
+    </div>
+
+    <script>className = document.getElementsByClassName("name");
+        for (let index = 0; index < className.length; index++) {
+            element = className[index];
+            get_color = element.style.color;
+            colorSet = document.getElementsByClassName("colorName");
+            colorSet[index].innerHTML = get_color;
+            colorSet[index].style.color = get_color;
+        }
+
+        function onclickFun() {
+            onclickVar = document.getElementsByClassName("colorName");
+            onclickVar[0].innerHTML = "<h1>ramkrushn</h1>";
+        }
+
+        document.getElementById("colorName").onclick = onclickFun;
+    </script>
+
+</body>
+
+</html>
